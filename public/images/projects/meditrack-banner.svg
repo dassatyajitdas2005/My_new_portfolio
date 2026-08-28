@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1310" />
+      <stop offset="50%" stop-color="#111c16" />
+      <stop offset="100%" stop-color="#070a09" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B5FF6D" />
+      <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a2620" />
+      <stop offset="100%" stop-color="#121a15" />
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#223329" stroke-width="0.75" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#bgGrad)" />
+  <rect width="1200" height="800" fill="url(#grid)" opacity="0.6" />
+
+  <!-- Ambient Glow -->
+  <circle cx="950" cy="250" r="300" fill="#B5FF6D" opacity="0.12" filter="blur(60px)" />
+  <circle cx="250" cy="650" r="250" fill="#10B981" opacity="0.1" filter="blur(50px)" />
+
+  <!-- Main App Frame -->
+  <g transform="translate(100, 100)">
+    <!-- Outer Window Frame -->
+    <rect width="1000" height="600" rx="28" fill="#141c17" stroke="#2a3f33" stroke-width="2" />
+    
+    <!-- Window Bar -->
+    <rect width="1000" height="60" rx="28" fill="#1a251f" />
+    <circle cx="45" cy="30" r="7" fill="#ef4444" opacity="0.8" />
+    <circle cx="70" cy="30" r="7" fill="#f59e0b" opacity="0.8" />
+    <circle cx="95" cy="30" r="7" fill="#10b981" opacity="0.8" />
+    
+    <text x="500" y="36" fill="#8ca898" font-family="-apple-system, sans-serif" font-size="14" font-weight="600" text-anchor="middle">
+      MediTrack — Healthcare &amp; Pharmacy Management
+    </text>
+
+    <!-- Sidebar -->
+    <rect x="25" y="85" width="220" height="490" rx="16" fill="url(#cardGrad)" stroke="#23352a" stroke-width="1" />
+    
+    <!-- Logo In Sidebar -->
+    <g transform="translate(45, 110)">
+      <rect width="36" height="36" rx="10" fill="url(#accentGrad)" />
+      <path d="M18 10 V26 M10 18 H26" stroke="#0b1310" stroke-width="3.5" stroke-linecap="round" />
+      <text x="48" y="24" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="18" font-weight="700">MediTrack</text>
+    </g>
+
+    <!-- Sidebar Nav Items -->
+    <g transform="translate(45, 180)">
+      <rect width="180" height="38" rx="10" fill="#25382c" />
+      <text x="20" y="24" fill="#B5FF6D" font-family="-apple-system, sans-serif" font-size="13" font-weight="600">✦ Stock Analytics</text>
+      
+      <text x="20" y="74" fill="#8ca898" font-family="-apple-system, sans-serif" font-size="13" font-weight="500">Dosage Schedules</text>
+      <text x="20" y="120" fill="#8ca898" font-family="-apple-system, sans-serif" font-size="13" font-weight="500">Digital Prescriptions</text>
+      <text x="20" y="166" fill="#8ca898" font-family="-apple-system, sans-serif" font-size="13" font-weight="500">Batch Expirations</text>
+      <text x="20" y="212" fill="#8ca898" font-family="-apple-system, sans-serif" font-size="13" font-weight="500">Pharmacy Billing</text>
+    </g>
+
+    <!-- Main Content Area -->
+    <!-- Metrics Cards Row -->
+    <g transform="translate(270, 85)">
+      <!-- Card 1 -->
+      <rect width="220" height="110" rx="16" fill="url(#cardGrad)" stroke="#23352a" stroke-width="1" />
+      <text x="20" y="32" fill="#8ca898" font-family="-apple-system, sans-serif" font-size="12" font-weight="500">ACTIVE INVENTORY</text>
+      <text x="20" y="72" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="28" font-weight="700">1,480</text>
+      <text x="20" y="94" fill="#B5FF6D" font-family="-apple-system, sans-serif" font-size="11" font-weight="600">↑ 100% In Stock</text>
+
+      <!-- Card 2 -->
+      <g transform="translate(240, 0)">
+        <rect width="220" height="110" rx="16" fill="url(#cardGrad)" stroke="#23352a" stroke-width="1" />
+        <text x="20" y="32" fill="#8ca898" font-family="-apple-system, sans-serif" font-size="12" font-weight="500">DOSAGE COMPLIANCE</text>
+        <text x="20" y="72" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="28" font-weight="700">98.4%</text>
+        <text x="20" y="94" fill="#34D399" font-family="-apple-system, sans-serif" font-size="11" font-weight="600">On Schedule</text>
+      </g>
+
+      <!-- Card 3 -->
+      <g transform="translate(480, 0)">
+        <rect width="220" height="110" rx="16" fill="url(#cardGrad)" stroke="#23352a" stroke-width="1" />
+        <text x="20" y="32" fill="#8ca898" font-family="-apple-system, sans-serif" font-size="12" font-weight="500">SAFETY ALERTS</text>
+        <text x="20" y="72" fill="#B5FF6D" font-family="-apple-system, sans-serif" font-size="28" font-weight="700">0 Critical</text>
+        <text x="20" y="94" fill="#8ca898" font-family="-apple-system, sans-serif" font-size="11" font-weight="600">All Batches Verified</text>
+      </g>
+    </g>
+
+    <!-- Table/Chart Panel -->
+    <g transform="translate(270, 215)">
+      <rect width="700" height="360" rx="18" fill="url(#cardGrad)" stroke="#23352a" stroke-width="1" />
+      <text x="25" y="40" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="16" font-weight="600">Real-Time Medicine Stock Monitor</text>
+      
+      <!-- Table Headers -->
+      <line x1="25" y1="65" x2="675" y2="65" stroke="#25382c" stroke-width="1" />
+      <text x="25" y="90" fill="#8ca898" font-family="-apple-system, sans-serif" font-size="12" font-weight="600">MEDICINE / FORMULATION</text>
+      <text x="280" y="90" fill="#8ca898" font-family="-apple-system, sans-serif" font-size="12" font-weight="600">BATCH</text>
+      <text x="420" y="90" fill="#8ca898" font-family="-apple-system, sans-serif" font-size="12" font-weight="600">QUANTITY</text>
+      <text x="560" y="90" fill="#8ca898" font-family="-apple-system, sans-serif" font-size="12" font-weight="600">STATUS</text>
+
+      <!-- Row 1 -->
+      <g transform="translate(25, 120)">
+        <text x="0" y="15" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="13" font-weight="500">Paracetamol 500mg IP Tab</text>
+        <text x="255" y="15" fill="#8ca898" font-family="-apple-system, sans-serif" font-size="12">#BT-9402</text>
+        <text x="395" y="15" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="13">450 Strips</text>
+        <rect x="535" y="0" width="80" height="22" rx="11" fill="#1e3a29" />
+        <text x="575" y="15" fill="#B5FF6D" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Optimal</text>
+      </g>
+
+      <!-- Row 2 -->
+      <g transform="translate(25, 165)">
+        <text x="0" y="15" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="13" font-weight="500">Amoxicillin &amp; Pot. Clavulanate</text>
+        <text x="255" y="15" fill="#8ca898" font-family="-apple-system, sans-serif" font-size="12">#BT-8120</text>
+        <text x="395" y="15" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="13">280 Boxes</text>
+        <rect x="535" y="0" width="80" height="22" rx="11" fill="#1e3a29" />
+        <text x="575" y="15" fill="#B5FF6D" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Optimal</text>
+      </g>
+
+      <!-- Row 3 -->
+      <g transform="translate(25, 210)">
+        <text x="0" y="15" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="13" font-weight="500">Pantoprazole 40mg Gastro-Resistant</text>
+        <text x="255" y="15" fill="#8ca898" font-family="-apple-system, sans-serif" font-size="12">#BT-7331</text>
+        <text x="395" y="15" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="13">310 Strips</text>
+        <rect x="535" y="0" width="80" height="22" rx="11" fill="#1e3a29" />
+        <text x="575" y="15" fill="#B5FF6D" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Optimal</text>
+      </g>
+
+      <!-- Row 4 -->
+      <g transform="translate(25, 255)">
+        <text x="0" y="15" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="13" font-weight="500">Cetirizine Hydrochloride 10mg</text>
+        <text x="255" y="15" fill="#8ca898" font-family="-apple-system, sans-serif" font-size="12">#BT-6119</text>
+        <text x="395" y="15" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="13">520 Strips</text>
+        <rect x="535" y="0" width="80" height="22" rx="11" fill="#1e3a29" />
+        <text x="575" y="15" fill="#B5FF6D" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Optimal</text>
+      </g>
+    </g>
+  </g>
+</svg>

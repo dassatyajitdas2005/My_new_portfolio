@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradY" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#180e0e" />
+      <stop offset="50%" stop-color="#241414" />
+      <stop offset="100%" stop-color="#0d0707" />
+    </linearGradient>
+    <pattern id="gridY" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#361f1f" stroke-width="0.75" />
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#bgGradY)" />
+  <rect width="1200" height="800" fill="url(#gridY)" opacity="0.6" />
+  <circle cx="950" cy="300" r="280" fill="#ef4444" opacity="0.12" filter="blur(60px)" />
+  <circle cx="250" cy="550" r="240" fill="#f97316" opacity="0.1" filter="blur(50px)" />
+
+  <g transform="translate(150, 120)">
+    <rect width="900" height="560" rx="24" fill="#1f1313" stroke="#4a2626" stroke-width="2" />
+    <rect width="900" height="55" rx="24" fill="#2c1a1a" />
+    <circle cx="40" cy="28" r="6" fill="#ef4444" opacity="0.8" />
+    <circle cx="62" cy="28" r="6" fill="#f59e0b" opacity="0.8" />
+    <circle cx="84" cy="28" r="6" fill="#10b981" opacity="0.8" />
+    <text x="450" y="34" fill="#ba9595" font-family="-apple-system, sans-serif" font-size="13" font-weight="600" text-anchor="middle">
+      Tech IT &amp; Mr. Career — YouTube Educational Content
+    </text>
+
+    <!-- Content Mockup -->
+    <g transform="translate(50, 90)">
+      <rect width="800" height="120" rx="16" fill="#361b1b" stroke="#522a2a" stroke-width="1" />
+      <text x="30" y="45" fill="#f87171" font-family="-apple-system, sans-serif" font-size="14" font-weight="700">EDUCATIONAL VIDEO PRODUCTION</text>
+      <text x="30" y="85" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="28" font-weight="700">Tech IT &amp; Career Guidance Channels</text>
+
+      <g transform="translate(0, 150)">
+        <rect width="380" height="260" rx="16" fill="#291515" stroke="#452222" stroke-width="1" />
+        <text x="25" y="40" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="16" font-weight="600">Tech IT Tutorials</text>
+        <line x1="25" y1="65" x2="355" y2="65" stroke="#3d1d1d" stroke-width="1" />
+        <text x="25" y="105" fill="#ba9595" font-family="-apple-system, sans-serif" font-size="13">✦ Programming &amp; Tech Fundamentals</text>
+        <text x="25" y="145" fill="#ba9595" font-family="-apple-system, sans-serif" font-size="13">✦ Software Development Overviews</text>
+        <text x="25" y="185" fill="#ba9595" font-family="-apple-system, sans-serif" font-size="13">✦ Engaging Motion &amp; Screen Recordings</text>
+        <text x="25" y="225" fill="#B5FF6D" font-family="-apple-system, sans-serif" font-size="13">✦ 1+ Year Continuous Publishing</text>
+      </g>
+
+      <g transform="translate(420, 150)">
+        <rect width="380" height="260" rx="16" fill="#291515" stroke="#452222" stroke-width="1" />
+        <text x="25" y="40" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="16" font-weight="600">Mr. Career Guidance</text>
+        <line x1="25" y1="65" x2="355" y2="65" stroke="#3d1d1d" stroke-width="1" />
+        <text x="25" y="105" fill="#ba9595" font-family="-apple-system, sans-serif" font-size="13">✦ Career Roadmaps for Students</text>
+        <text x="25" y="145" fill="#ba9595" font-family="-apple-system, sans-serif" font-size="13">✦ Skill Acquisition Strategies</text>
+        <text x="25" y="185" fill="#ba9595" font-family="-apple-system, sans-serif" font-size="13">✦ High Audience Retention Edits</text>
+        <text x="25" y="225" fill="#f87171" font-family="-apple-system, sans-serif" font-size="13">✦ Impactful Educational Media</text>
+      </g>
+    </g>
+  </g>
+</svg>

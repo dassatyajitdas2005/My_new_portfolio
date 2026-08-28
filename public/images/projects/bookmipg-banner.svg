@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradB" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#120e17" />
+      <stop offset="50%" stop-color="#1d1424" />
+      <stop offset="100%" stop-color="#0a080d" />
+    </linearGradient>
+    <pattern id="gridB" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#2b1e36" stroke-width="0.75" />
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#bgGradB)" />
+  <rect width="1200" height="800" fill="url(#gridB)" opacity="0.6" />
+  <circle cx="950" cy="300" r="280" fill="#a855f7" opacity="0.12" filter="blur(60px)" />
+  <circle cx="250" cy="550" r="240" fill="#ec4899" opacity="0.1" filter="blur(50px)" />
+
+  <g transform="translate(150, 120)">
+    <rect width="900" height="560" rx="24" fill="#18121f" stroke="#362547" stroke-width="2" />
+    <rect width="900" height="55" rx="24" fill="#22192d" />
+    <circle cx="40" cy="28" r="6" fill="#ef4444" opacity="0.8" />
+    <circle cx="62" cy="28" r="6" fill="#f59e0b" opacity="0.8" />
+    <circle cx="84" cy="28" r="6" fill="#10b981" opacity="0.8" />
+    <text x="450" y="34" fill="#a593ba" font-family="-apple-system, sans-serif" font-size="13" font-weight="600" text-anchor="middle">
+      Rental | Bookmipg — Media &amp; Brand Production
+    </text>
+
+    <!-- Content Mockup -->
+    <g transform="translate(50, 90)">
+      <rect width="800" height="120" rx="16" fill="#271b34" stroke="#3d2a52" stroke-width="1" />
+      <text x="30" y="45" fill="#c084fc" font-family="-apple-system, sans-serif" font-size="14" font-weight="700">RENTAL PROPERTY MEDIA &amp; BRANDING</text>
+      <text x="30" y="85" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="28" font-weight="700">Video Walkthroughs &amp; Poster Design</text>
+
+      <g transform="translate(0, 150)">
+        <rect width="380" height="260" rx="16" fill="#20162b" stroke="#362547" stroke-width="1" />
+        <text x="25" y="40" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="16" font-weight="600">Video Marketing Assets</text>
+        <line x1="25" y1="65" x2="355" y2="65" stroke="#302042" stroke-width="1" />
+        <text x="25" y="105" fill="#a593ba" font-family="-apple-system, sans-serif" font-size="13">✦ Dynamic Property Walkthroughs</text>
+        <text x="25" y="145" fill="#a593ba" font-family="-apple-system, sans-serif" font-size="13">✦ CapCut Advanced Editing &amp; Pacing</text>
+        <text x="25" y="185" fill="#a593ba" font-family="-apple-system, sans-serif" font-size="13">✦ Short-Form Reel &amp; Promo Cuts</text>
+        <text x="25" y="225" fill="#B5FF6D" font-family="-apple-system, sans-serif" font-size="13">✦ Accelerated Inquiries by 2x</text>
+      </g>
+
+      <g transform="translate(420, 150)">
+        <rect width="380" height="260" rx="16" fill="#20162b" stroke="#362547" stroke-width="1" />
+        <text x="25" y="40" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="16" font-weight="600">Graphic &amp; Poster Design</text>
+        <line x1="25" y1="65" x2="355" y2="65" stroke="#302042" stroke-width="1" />
+        <text x="25" y="105" fill="#a593ba" font-family="-apple-system, sans-serif" font-size="13">✦ High-Converting Promotional Banners</text>
+        <text x="25" y="145" fill="#a593ba" font-family="-apple-system, sans-serif" font-size="13">✦ Consistent Typography &amp; Palette</text>
+        <text x="25" y="185" fill="#a593ba" font-family="-apple-system, sans-serif" font-size="13">✦ Social Media Campaign Graphics</text>
+        <text x="25" y="225" fill="#c084fc" font-family="-apple-system, sans-serif" font-size="13">✦ Local Haldia Brand Recognition</text>
+      </g>
+    </g>
+  </g>
+</svg>

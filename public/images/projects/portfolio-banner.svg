@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradP" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e1017" />
+      <stop offset="50%" stop-color="#141724" />
+      <stop offset="100%" stop-color="#0a0c12" />
+    </linearGradient>
+    <linearGradient id="glowP" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#B5FF6D" />
+    </linearGradient>
+    <pattern id="gridP" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e2338" stroke-width="0.75" />
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#bgGradP)" />
+  <rect width="1200" height="800" fill="url(#gridP)" opacity="0.6" />
+  <circle cx="900" cy="300" r="280" fill="#6366F1" opacity="0.12" filter="blur(60px)" />
+  <circle cx="300" cy="550" r="240" fill="#B5FF6D" opacity="0.1" filter="blur(50px)" />
+
+  <g transform="translate(150, 120)">
+    <rect width="900" height="560" rx="24" fill="#131622" stroke="#252c42" stroke-width="2" />
+    
+    <!-- Header -->
+    <rect width="900" height="55" rx="24" fill="#191d2c" />
+    <circle cx="40" cy="28" r="6" fill="#ef4444" opacity="0.8" />
+    <circle cx="62" cy="28" r="6" fill="#f59e0b" opacity="0.8" />
+    <circle cx="84" cy="28" r="6" fill="#10b981" opacity="0.8" />
+    <text x="450" y="34" fill="#8d99ae" font-family="-apple-system, sans-serif" font-size="13" font-weight="600" text-anchor="middle">
+      satyajitdas.dev — Modern Editorial Portfolio
+    </text>
+
+    <!-- Nav mockup -->
+    <rect x="250" y="80" width="400" height="40" rx="20" fill="#1e2338" stroke="#2d3550" stroke-width="1" />
+    <text x="310" y="105" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="13" font-weight="600">Home</text>
+    <text x="390" y="105" fill="#8d99ae" font-family="-apple-system, sans-serif" font-size="13">About</text>
+    <text x="470" y="105" fill="#8d99ae" font-family="-apple-system, sans-serif" font-size="13">Projects</text>
+    <text x="560" y="105" fill="#8d99ae" font-family="-apple-system, sans-serif" font-size="13">Contact</text>
+    
+    <!-- Hero Mockup inside -->
+    <g transform="translate(80, 180)">
+      <text x="0" y="40" fill="#8d99ae" font-family="-apple-system, sans-serif" font-size="18">Hey! It's me Satyajit,</text>
+      <text x="0" y="100" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="44" font-weight="700">
+        Building <tspan fill="#B5FF6D">Health-Tech &amp; Web Solutions,</tspan>
+      </text>
+      <text x="0" y="150" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="44" font-weight="700">
+        That Inspire.
+      </text>
+      <line x1="0" y1="190" x2="740" y2="190" stroke="#252c42" stroke-width="1" />
+      <text x="0" y="230" fill="#8d99ae" font-family="-apple-system, sans-serif" font-size="15">
+        Pharmacy &amp; Business Management • Next.js 15 App Router • TypeScript • Tailwind CSS
+      </text>
+
+      <!-- Pill badges -->
+      <rect x="0" y="270" width="160" height="42" rx="21" fill="#ffffff" />
+      <text x="80" y="296" fill="#000000" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" text-anchor="middle">Know me better</text>
+
+      <rect x="180" y="270" width="130" height="42" rx="21" fill="#1e2338" stroke="#2d3550" stroke-width="1" />
+      <text x="245" y="296" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="14" font-weight="600" text-anchor="middle">Projects ↗</text>
+    </g>
+  </g>
+</svg>
