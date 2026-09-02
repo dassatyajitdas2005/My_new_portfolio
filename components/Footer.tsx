@@ -3,7 +3,7 @@
 import * as React from "react";
 import { Mail, Globe } from "lucide-react";
 import { profileData } from "@/data/profile";
-import { GitHubIcon, LinkedInIcon } from "./Icons";
+import { GitHubIcon, LinkedInIcon, InstagramIcon } from "./Icons";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -33,6 +33,15 @@ export function Footer() {
             className="hover:text-text-primary transition-colors"
           >
             <GitHubIcon className="h-4 w-4" />
+          </a>
+          <a
+            href={profileData.instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            className="hover:text-text-primary transition-colors"
+          >
+            <InstagramIcon className="h-4 w-4" />
           </a>
           <a
             href={`mailto:${profileData.email}`}

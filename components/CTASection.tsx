@@ -4,7 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import { Mail } from "lucide-react";
 import { profileData } from "@/data/profile";
-import { GitHubIcon, LinkedInIcon } from "./Icons";
+import { GitHubIcon, LinkedInIcon, InstagramIcon } from "./Icons";
 
 export function CTASection() {
   return (
@@ -52,6 +52,15 @@ export function CTASection() {
             className="hover:text-text-primary transition-colors"
           >
             <GitHubIcon className="h-5 w-5" />
+          </a>
+          <a
+            href={profileData.instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            className="hover:text-text-primary transition-colors"
+          >
+            <InstagramIcon className="h-5 w-5" />
           </a>
           <a
             href={`mailto:${profileData.email}`}

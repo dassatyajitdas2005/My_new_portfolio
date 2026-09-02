@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Sparkle, Mail, Phone, MapPin } from "lucide-react";
 import { profileData } from "@/data/profile";
 import { ContactForm } from "./ContactForm";
-import { GitHubIcon, LinkedInIcon } from "./Icons";
+import { GitHubIcon, LinkedInIcon, InstagramIcon } from "./Icons";
 
 export function ContactSection() {
   return (
@@ -103,6 +103,15 @@ export function ContactSection() {
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-bg-700 bg-bg-900 text-text-secondary transition-colors hover:border-bg-600 hover:text-text-primary"
               >
                 <GitHubIcon className="h-4 w-4" />
+              </a>
+              <a
+                href={profileData.instagramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-bg-700 bg-bg-900 text-text-secondary transition-colors hover:border-bg-600 hover:text-text-primary"
+              >
+                <InstagramIcon className="h-4 w-4" />
               </a>
               <a
                 href={`mailto:${profileData.email}`}

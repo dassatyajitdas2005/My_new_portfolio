@@ -25,6 +25,7 @@ export interface ProfileData {
   portfolioUrl: string;
   linkedInUrl: string;
   githubUrl: string;
+  instagramUrl: string;
   availableForWork: boolean;
   languages: { language: string; proficiency: string }[];
   socialLinks: SocialLink[];
@@ -51,6 +52,7 @@ export const profileData: ProfileData = {
   portfolioUrl: "https://dassatyajitdas2005.github.io/my_portfolio/",
   linkedInUrl: "https://www.linkedin.com/in/satyajit-das-7822ab300",
   githubUrl: "https://github.com/dassatyajitdas2005",
+  instagramUrl: "https://www.instagram.com/satyajit_d_a_s_/",
   availableForWork: true,
   languages: [
     { language: "Bengali", proficiency: "Full Professional" },
@@ -67,6 +69,11 @@ export const profileData: ProfileData = {
       name: "GitHub",
       url: "https://github.com/dassatyajitdas2005",
       label: "GitHub",
+    },
+    {
+      name: "Instagram",
+      url: "https://www.instagram.com/satyajit_d_a_s_/",
+      label: "Instagram",
     },
     {
       name: "Gmail",

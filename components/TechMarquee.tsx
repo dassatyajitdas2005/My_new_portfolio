@@ -16,6 +16,11 @@ import {
   ShieldCheck,
   Terminal,
 } from "lucide-react";
+import {
+  JavaScriptIcon,
+  FirebaseIcon,
+  EmailJSIcon,
+} from "./Icons";
 
 interface TechMarqueeProps {
   duration?: number;
@@ -23,6 +28,12 @@ interface TechMarqueeProps {
 }
 
 const getIcon = (name: string) => {
+  if (name === "JavaScript" || name.includes("JavaScript"))
+    return <JavaScriptIcon className="h-4 w-4 text-highlight" />;
+  if (name === "Firebase" || name.includes("Firebase"))
+    return <FirebaseIcon className="h-4 w-4 text-highlight" />;
+  if (name === "EmailJS" || name.includes("EmailJS"))
+    return <EmailJSIcon className="h-4 w-4 text-highlight" />;
   if (name.includes("Web") || name.includes("React") || name.includes("Next"))
     return <Globe className="h-4 w-4 text-highlight" />;
   if (name.includes("Health") || name.includes("Pharmacy"))
@@ -33,7 +44,7 @@ const getIcon = (name: string) => {
     return <Palette className="h-4 w-4 text-highlight" />;
   if (name.includes("Sheets") || name.includes("Data"))
     return <FileSpreadsheet className="h-4 w-4 text-highlight" />;
-  if (name.includes("TypeScript") || name.includes("JavaScript"))
+  if (name.includes("TypeScript"))
     return <Code className="h-4 w-4 text-highlight" />;
   if (name.includes("Tailwind") || name.includes("HTML"))
     return <Layout className="h-4 w-4 text-highlight" />;

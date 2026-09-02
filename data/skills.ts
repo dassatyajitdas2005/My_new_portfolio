@@ -16,6 +16,9 @@ export interface ExpertiseArea {
 }
 
 export const skillsList: SkillItem[] = [
+  { name: "JavaScript", category: "dev" },
+  { name: "Firebase", category: "dev" },
+  { name: "EmailJS", category: "dev" },
   { name: "Web Development", category: "dev" },
   { name: "Health-Tech Systems", category: "health" },
   { name: "Pharmacy Practice", category: "health" },
@@ -29,7 +32,7 @@ export const skillsList: SkillItem[] = [
   { name: "Creative Problem Solving", category: "business" },
   { name: "Data Listing Operations", category: "business" },
   { name: "React & Next.js", category: "dev" },
-  { name: "TypeScript / JavaScript", category: "dev" },
+  { name: "TypeScript", category: "dev" },
   { name: "HTML5 & CSS3", category: "dev" },
   { name: "Tailwind CSS", category: "dev" },
   { name: "Git & GitHub", category: "dev" },
