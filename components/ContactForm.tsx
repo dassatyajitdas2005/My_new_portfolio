@@ -28,15 +28,41 @@ export function ContactForm() {
 
     setStatus("loading");
 
-    // Client-side email composition fallback
     try {
-      // Simulate brief network submission / trigger mailto
-      await new Promise((resolve) => setTimeout(resolve, 800));
-      setStatus("success");
-      setFormData({ name: "", email: "", message: "" });
+      const accessKey =
+        process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ||
+        "304518eb-1945-44f0-8e00-01c323d57675";
+
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: accessKey,
+          name: formData.name.trim(),
+          email: formData.email.trim(),
+          message: formData.message.trim(),
+          subject: `New Portfolio Message from ${formData.name.trim()}`,
+          from_name: "Satyajit Portfolio",
+        }),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setStatus("success");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        setStatus("error");
+        setErrorMessage(data.message || "Failed to send message. Please try again.");
+      }
     } catch {
       setStatus("error");
-      setErrorMessage("Something went wrong. Please reach out via email directly.");
+      setErrorMessage(
+        "Network error. Please try again or reach out directly via email."
+      );
     }
   };
 
