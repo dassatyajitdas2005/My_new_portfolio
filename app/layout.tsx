@@ -5,6 +5,7 @@ import { MobileNav } from "@/components/MobileNav";
 import { Footer } from "@/components/Footer";
 import { ScrollObserver } from "@/components/ScrollObserver";
 import { profileData } from "@/data/profile";
+import { AIChatWidget } from "@/components/AIChat/AIChatWidget";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -63,6 +64,7 @@ export default function RootLayout({
           <main className="min-h-screen pt-4">{children}</main>
           <Footer />
           <MobileNav />
+          <AIChatWidget />
         </ThemeProvider>
       </body>
     </html>
