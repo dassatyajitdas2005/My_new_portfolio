@@ -27,6 +27,7 @@ export interface ProfileData {
   githubUrl: string;
   instagramUrl: string;
   twitterUrl: string;
+  resumeUrl: string;
   availableForWork: boolean;
   languages: { language: string; proficiency: string }[];
   socialLinks: SocialLink[];
@@ -55,6 +56,7 @@ export const profileData: ProfileData = {
   githubUrl: "https://github.com/dassatyajitdas2005",
   instagramUrl: "https://www.instagram.com/satyajit_d_a_s_/",
   twitterUrl: "https://x.com/Satyajit1873526",
+  resumeUrl: "/resume.pdf",
   availableForWork: true,
   languages: [
     { language: "Bengali", proficiency: "Full Professional" },

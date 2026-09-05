@@ -93,12 +93,12 @@ export default function AboutPage() {
                 Get In Touch
               </Link>
               <a
-                href={profileData.portfolioUrl}
+                href={profileData.resumeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-bg-700 bg-bg-800 px-6 py-3.5 text-sm font-semibold text-text-primary transition-all hover:bg-bg-700 active:scale-[0.98] font-clash"
               >
-                Online Portfolio
+                My Resume
                 <ArrowUpRight className="h-4 w-4 text-highlight" />
               </a>
             </div>
