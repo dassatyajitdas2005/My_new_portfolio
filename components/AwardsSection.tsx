@@ -9,7 +9,7 @@ export function AwardsSection() {
     <section className="mx-auto my-24 max-w-screen-xl px-4 sm:px-6 lg:px-8">
       <div className="flex flex-col gap-8 md:flex-row md:gap-20">
         {/* Left Column */}
-        <div className="md:w-1/3">
+        <div className="reveal md:w-1/3">
           <div className="mb-4 flex items-center gap-2">
             <Sparkle className="h-4 w-4 text-highlight" />
             <span className="inline-block bg-gradient-to-r from-text-secondary via-text-primary to-text-secondary bg-[length:300%_200%] bg-clip-text text-xs font-semibold uppercase tracking-widest text-highlight animate-shine">
@@ -27,10 +27,11 @@ export function AwardsSection() {
 
         {/* Right Column Horizontal List */}
         <div className="flex flex-col md:w-2/3">
-          {awardsData.map((award) => (
+          {awardsData.map((award, idx) => (
             <div
               key={award.id}
-              className="flex flex-wrap items-center justify-between gap-4 border-b border-bg-700 py-5 transition-colors duration-200 hover:border-bg-600"
+              className="reveal flex flex-wrap items-center justify-between gap-4 border-b border-bg-700 py-5 transition-colors duration-200 hover:border-bg-600"
+              style={{ transitionDelay: `${0.08 * (idx + 1)}s` }}
             >
               <div className="flex items-center gap-3.5">
                 <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#B5FF6D]/10 text-highlight">

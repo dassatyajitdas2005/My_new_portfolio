@@ -20,20 +20,20 @@ export function ExpertiseAccordion() {
   return (
     <section className="mx-auto my-24 max-w-screen-xl px-4 sm:px-6 lg:px-8">
       {/* Badge */}
-      <div className="mb-4 flex items-center gap-2">
+      <div className="reveal mb-4 flex items-center gap-2">
         <Sparkle className="h-4 w-4 text-highlight" />
         <span className="inline-block bg-gradient-to-r from-text-secondary via-text-primary to-text-secondary bg-[length:300%_200%] bg-clip-text text-xs font-semibold uppercase tracking-widest text-highlight animate-shine">
           Speciality
         </span>
       </div>
 
-      <h2 className="mb-8 text-3xl font-medium tracking-tight text-text-primary md:text-5xl font-clash">
+      <h2 className="reveal reveal-delay-1 mb-8 text-3xl font-medium tracking-tight text-text-primary md:text-5xl font-clash">
         Areas of Expertise
       </h2>
 
       <div className="flex flex-col items-start gap-8 lg:flex-row lg:gap-12">
         {/* Left Accordion Column */}
-        <div className="w-full space-y-3.5 lg:w-1/2">
+        <div className="reveal w-full space-y-3.5 lg:w-1/2">
           {expertiseAreas.map((item) => {
             const isOpen = activeId === item.id;
 
@@ -88,7 +88,7 @@ export function ExpertiseAccordion() {
         </div>
 
         {/* Right Preview Card */}
-        <div className="relative aspect-video w-full overflow-hidden rounded-3xl border border-bg-700 bg-bg-800 p-6 shadow-xl lg:w-1/2 flex flex-col justify-between">
+        <div className="reveal reveal-delay-2 relative aspect-video w-full overflow-hidden rounded-3xl border border-bg-700 bg-bg-800 p-6 shadow-xl lg:w-1/2 flex flex-col justify-between">
           {/* Subtle Background Glow */}
           <div
             className={`pointer-events-none absolute -right-12 -top-12 h-64 w-64 rounded-full bg-gradient-to-br ${activeExpertise.accent} blur-3xl opacity-50`}

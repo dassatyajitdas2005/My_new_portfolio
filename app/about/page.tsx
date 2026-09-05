@@ -18,48 +18,73 @@ export default function AboutPage() {
       <section className="mx-auto max-w-screen-xl px-4 pt-6 sm:px-6 md:py-12 lg:px-8">
         <div className="flex flex-col items-center gap-12 sm:flex-row md:gap-16">
           {/* Left Avatar / Graphic Frame */}
-          <div className="relative w-full sm:w-1/2">
-            <div className="group relative aspect-[3/4] w-full overflow-hidden rounded-b-full rounded-t-3xl border border-bg-700 bg-bg-800 shadow-2xl">
-              <Image
-                src={profileData.avatarUrl}
-                alt={profileData.name}
-                fill
-                priority
-                className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
-                sizes="(max-width: 640px) 100vw, 50vw"
-              />
-            </div>
-
-            {/* Floating "Let's Talk" Circular Badge */}
-            <Link
-              href="/contact"
-              className="group absolute -bottom-4 -right-4 z-20 flex h-24 w-24 items-center justify-center rounded-full border border-bg-700 bg-bg-800 p-2 shadow-2xl transition-transform hover:scale-105 sm:h-28 sm:w-28"
-            >
-              <div className="flex h-12 w-12 items-center justify-center rounded-full border border-bg-600 bg-bg-900 transition-colors group-hover:border-highlight">
-                <ArrowUpRight className="h-5 w-5 text-highlight transition-transform group-hover:rotate-45" />
+          <div className="reveal relative flex w-full justify-center sm:w-1/2 sm:justify-start">
+            <div className="relative w-full max-w-[320px] sm:max-w-[340px] md:max-w-[370px] lg:max-w-[390px]">
+              {/* Arch Shaped Photo Container */}
+              <div className="group relative aspect-[3/4] w-full overflow-hidden rounded-b-full bg-bg-800 shadow-2xl">
+                <Image
+                  src={profileData.avatarUrl}
+                  alt={profileData.name}
+                  fill
+                  priority
+                  className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                  sizes="(max-width: 640px) 320px, 400px"
+                />
               </div>
-              <span className="sr-only">Let&apos;s Talk</span>
-            </Link>
+
+              {/* Floating "Let's Talk" Circular Rotating Badge */}
+              <Link
+                href="/contact"
+                className="reveal reveal-delay-1 group absolute bottom-0 right-0 z-20 flex aspect-square w-[38%] max-w-[150px] min-w-[105px] items-center justify-center rounded-full border border-bg-700/80 bg-bg-800 p-2 shadow-2xl transition-transform duration-300 hover:scale-105"
+                aria-label="Let's Talk"
+              >
+                {/* Rotating curved circular text */}
+                <div className="absolute inset-0 flex items-center justify-center animate-[spin_12s_linear_infinite] group-hover:[animation-duration:6s]">
+                  <svg viewBox="0 0 100 100" className="h-full w-full">
+                    <path
+                      id="letsTalkCircle"
+                      d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
+                      fill="none"
+                    />
+                    <text className="fill-text-secondary text-[7.4px] font-medium tracking-[0.12em] uppercase">
+                      <textPath
+                        href="#letsTalkCircle"
+                        startOffset="0%"
+                        textLength="232"
+                        lengthAdjust="spacing"
+                      >
+                        • LETS TALK • LETS TALK • LETS TALK • LETS TALK 
+                      </textPath>
+                    </text>
+                  </svg>
+                </div>
+
+                {/* Inner center circle with arrow */}
+                <div className="relative flex h-[48%] w-[48%] items-center justify-center rounded-full border border-bg-600 bg-bg-900 transition-all duration-300 group-hover:border-highlight">
+                  <ArrowUpRight className="h-4 w-4 text-text-primary transition-all duration-300 group-hover:rotate-45 group-hover:text-highlight sm:h-5 sm:w-5" />
+                </div>
+              </Link>
+            </div>
           </div>
 
           {/* Right Text Content */}
           <div className="w-full space-y-6 sm:w-1/2">
-            <div className="flex items-center gap-2">
+            <div className="reveal flex items-center gap-2">
               <Sparkle className="h-4 w-4 text-highlight" />
               <span className="inline-block bg-gradient-to-r from-text-secondary via-text-primary to-text-secondary bg-[length:300%_200%] bg-clip-text text-xs font-semibold uppercase tracking-widest text-highlight animate-shine">
                 Biography &amp; Vision
               </span>
             </div>
 
-            <h1 className="text-balance font-clash text-3xl font-medium tracking-tight text-text-primary sm:text-5xl lg:text-6xl">
+            <h1 className="reveal reveal-delay-1 text-balance font-clash text-3xl font-medium tracking-tight text-text-primary sm:text-5xl lg:text-6xl">
               I Build Things <span className="text-highlight">That Matter.</span>
             </h1>
 
-            <p className="text-pretty text-base leading-relaxed text-text-secondary font-satoshi sm:text-lg">
+            <p className="reveal reveal-delay-2 text-pretty text-base leading-relaxed text-text-secondary font-satoshi sm:text-lg">
               {profileData.aboutDescription}
             </p>
 
-            <div className="flex flex-wrap items-center gap-4 pt-2">
+            <div className="reveal reveal-delay-3 flex flex-wrap items-center gap-4 pt-2">
               <Link
                 href="/contact"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-8 py-3.5 text-sm font-semibold text-primary-foreground shadow transition-all hover:bg-primary/90 active:scale-[0.98] font-clash"

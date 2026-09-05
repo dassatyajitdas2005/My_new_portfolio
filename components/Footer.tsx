@@ -1,9 +1,9 @@
 "use client";
 
 import * as React from "react";
-import { Mail, Globe } from "lucide-react";
+import { Mail } from "lucide-react";
 import { profileData } from "@/data/profile";
-import { GitHubIcon, LinkedInIcon, InstagramIcon } from "./Icons";
+import { GitHubIcon, LinkedInIcon, InstagramIcon, XIcon } from "./Icons";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -44,20 +44,20 @@ export function Footer() {
             <InstagramIcon className="h-4 w-4" />
           </a>
           <a
+            href={profileData.twitterUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="X (Twitter)"
+            className="hover:text-text-primary transition-colors"
+          >
+            <XIcon className="h-3.5 w-3.5" />
+          </a>
+          <a
             href={`mailto:${profileData.email}`}
             aria-label="Gmail"
             className="hover:text-text-primary transition-colors"
           >
             <Mail className="h-4 w-4" />
-          </a>
-          <a
-            href={profileData.portfolioUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Portfolio"
-            className="hover:text-text-primary transition-colors"
-          >
-            <Globe className="h-4 w-4" />
           </a>
         </div>
       </div>

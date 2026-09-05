@@ -3,6 +3,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import { Navbar } from "@/components/Navbar";
 import { MobileNav } from "@/components/MobileNav";
 import { Footer } from "@/components/Footer";
+import { ScrollObserver } from "@/components/ScrollObserver";
 import { profileData } from "@/data/profile";
 import "./globals.css";
 
@@ -35,6 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${profileData.name} | Portfolio`,
     description: profileData.headline,
+    creator: "@Satyajit1873526",
   },
   robots: {
     index: true,
@@ -56,6 +58,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <ScrollObserver />
           <Navbar />
           <main className="min-h-screen pt-4">{children}</main>
           <Footer />

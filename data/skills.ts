@@ -1,6 +1,7 @@
 export interface SkillItem {
   name: string;
   category: "dev" | "health" | "media" | "business";
+  icon?: string;
   level?: string;
 }
 
@@ -16,28 +17,37 @@ export interface ExpertiseArea {
 }
 
 export const skillsList: SkillItem[] = [
-  { name: "JavaScript", category: "dev" },
-  { name: "Firebase", category: "dev" },
-  { name: "EmailJS", category: "dev" },
-  { name: "Web Development", category: "dev" },
+  { name: "JavaScript", category: "dev", icon: "/assets/images/skills/JavaScript.svg" },
+  { name: "TypeScript", category: "dev", icon: "/assets/images/skills/TypeScript.svg" },
+  { name: "React.js", category: "dev", icon: "/assets/images/skills/React.svg" },
+  { name: "Next.js", category: "dev", icon: "/assets/images/skills/Next.js.svg" },
+  { name: "Node.js", category: "dev", icon: "/assets/images/skills/Node.js.svg" },
+  { name: "Express.js", category: "dev", icon: "/assets/images/skills/Express.svg" },
+  { name: "MySQL", category: "dev", icon: "/assets/images/skills/MySQL.svg" },
+  { name: "PostgreSQL", category: "dev", icon: "/assets/images/skills/PostgresSQL.svg" },
+  { name: "MongoDB", category: "dev", icon: "/assets/images/skills/MongoDB.svg" },
+  { name: "Pandas", category: "dev", icon: "/assets/images/skills/Pandas.svg" },
+  { name: "NumPy", category: "dev", icon: "/assets/images/skills/NumPy.svg" },
+  { name: "Power BI", category: "business", icon: "/assets/images/skills/PowerBI.svg" },
+  { name: "Tableau", category: "business", icon: "/assets/images/skills/Tableau.svg" },
+  { name: "MS Excel", category: "business", icon: "/assets/images/skills/Excel.svg" },
+  { name: "VS Code", category: "dev", icon: "/assets/images/skills/VSCode.svg" },
+  { name: "Python", category: "dev", icon: "/assets/images/skills/Python.svg" },
+  { name: "HTML5", category: "dev", icon: "/assets/images/skills/HTML5.svg" },
+  { name: "CSS3", category: "dev", icon: "/assets/images/skills/CSS3.svg" },
+  { name: "Tailwind CSS", category: "dev", icon: "/assets/images/skills/TailwindCSS.svg" },
+  { name: "Git", category: "dev", icon: "/assets/images/skills/Git.svg" },
+  { name: "Figma", category: "media", icon: "/assets/images/skills/Figma.svg" },
+  { name: "Jira", category: "business", icon: "/assets/images/skills/Jira.svg" },
+  { name: "Docker", category: "dev", icon: "/assets/images/skills/Docker.svg" },
+  { name: "Firebase", category: "dev", icon: "/assets/images/skills/Firebase.svg" },
+  { name: "Redux", category: "dev", icon: "/assets/images/skills/Redux.svg" },
+  { name: "Google Sheets", category: "business", icon: "/assets/images/skills/GoogleSheets.svg" },
+  { name: "Canva", category: "media", icon: "/assets/images/skills/Canva.svg" },
   { name: "Health-Tech Systems", category: "health" },
   { name: "Pharmacy Practice", category: "health" },
   { name: "Business Strategy", category: "business" },
   { name: "SEO Copywriting", category: "media" },
-  { name: "CapCut Video Editing", category: "media" },
-  { name: "Poster & Graphic Design", category: "media" },
-  { name: "Google Sheets Analytics", category: "business" },
-  { name: "Digital Transformation", category: "business" },
-  { name: "Entrepreneurship", category: "business" },
-  { name: "Creative Problem Solving", category: "business" },
-  { name: "Data Listing Operations", category: "business" },
-  { name: "React & Next.js", category: "dev" },
-  { name: "TypeScript", category: "dev" },
-  { name: "HTML5 & CSS3", category: "dev" },
-  { name: "Tailwind CSS", category: "dev" },
-  { name: "Git & GitHub", category: "dev" },
-  { name: "Market Disruption", category: "business" },
-  { name: "Content Innovation", category: "media" },
 ];
 
 export const expertiseAreas: ExpertiseArea[] = [

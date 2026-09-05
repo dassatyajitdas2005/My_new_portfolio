@@ -8,7 +8,7 @@ export function AboutSection() {
   const words = profileData.aboutStatement.split(" ");
 
   return (
-    <section className="mx-auto my-28 max-w-screen-xl px-4 sm:px-6 lg:px-8 max-sm:my-16">
+    <section className="mx-auto my-16 max-w-screen-xl px-4 sm:my-20 sm:px-6 lg:px-8">
       {/* Category Pill with Shine */}
       <div className="mb-6 flex items-center justify-center gap-2">
         <Sparkle className="h-4 w-4 text-highlight" />
@@ -19,9 +19,9 @@ export function AboutSection() {
         </span>
       </div>
 
-      {/* Large Statement */}
-      <div className="mx-auto max-w-4xl text-center">
-        <p className="text-balance font-satoshi text-2xl font-medium leading-relaxed text-text-secondary sm:text-3xl md:text-4xl lg:text-[2.6rem] lg:leading-[1.4]">
+      {/* Statement - refined typography to match reference proportions */}
+      <div className="mx-auto max-w-5xl text-center">
+        <p className="font-satoshi text-lg font-normal leading-relaxed text-text-secondary sm:text-2xl md:text-3xl lg:text-[30px] lg:leading-[1.4] tracking-tight">
           {words.map((word, i) => {
             const isHighlight =
               word.includes("Satyajit") ||
@@ -36,7 +36,7 @@ export function AboutSection() {
                 key={i}
                 className={`inline-block mr-1.5 transition-colors duration-200 ${
                   isHighlight
-                    ? "text-text-primary font-semibold"
+                    ? "text-text-primary font-medium"
                     : "text-text-secondary hover:text-text-primary"
                 }`}
               >

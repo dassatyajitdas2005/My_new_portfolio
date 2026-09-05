@@ -23,7 +23,7 @@ export function ExperienceSection() {
     <section className="mx-auto my-24 max-w-screen-xl px-4 sm:px-6 lg:px-8">
       <div className="flex flex-col gap-10 lg:flex-row lg:gap-16">
         {/* Left Info Column */}
-        <div className="w-full lg:w-1/3">
+        <div className="reveal w-full lg:w-1/3">
           <div className="mb-4 flex items-center gap-2">
             <Sparkle className="h-4 w-4 text-highlight" />
             <span className="inline-block bg-gradient-to-r from-text-secondary via-text-primary to-text-secondary bg-[length:300%_200%] bg-clip-text text-xs font-semibold uppercase tracking-widest text-highlight animate-shine">
@@ -40,15 +40,15 @@ export function ExperienceSection() {
         </div>
 
         {/* Right Experiences Column */}
-        <div className="w-full lg:w-2/3">
+        <div className="reveal reveal-delay-1 w-full lg:w-2/3">
           <div className="space-y-4">
-            {experienceData.map((item) => {
+            {experienceData.map((item, index) => {
               const isOpen = openId === item.id;
 
               return (
                 <div
                   key={item.id}
-                  className="rounded-2xl border border-bg-700 bg-bg-800/80 transition-all duration-300 hover:border-bg-600"
+                  className="reveal rounded-2xl border border-bg-700 bg-bg-800/80 transition-all duration-300 hover:border-bg-600"
                 >
                   <button
                     type="button"

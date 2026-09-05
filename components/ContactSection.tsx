@@ -5,31 +5,31 @@ import Image from "next/image";
 import { Sparkle, Mail, Phone, MapPin } from "lucide-react";
 import { profileData } from "@/data/profile";
 import { ContactForm } from "./ContactForm";
-import { GitHubIcon, LinkedInIcon, InstagramIcon } from "./Icons";
+import { GitHubIcon, LinkedInIcon, InstagramIcon, XIcon } from "./Icons";
 
 export function ContactSection() {
   return (
     <section className="mx-auto my-24 max-w-screen-xl px-4 sm:px-6 lg:px-8">
       {/* Badge */}
-      <div className="mb-4 flex items-center gap-2">
+      <div className="reveal mb-4 flex items-center gap-2">
         <Sparkle className="h-4 w-4 text-highlight" />
         <span className="inline-block bg-gradient-to-r from-text-secondary via-text-primary to-text-secondary bg-[length:300%_200%] bg-clip-text text-xs font-semibold uppercase tracking-widest text-highlight animate-shine">
           Connect with me
         </span>
       </div>
 
-      <h1 className="mb-8 w-full font-clash text-3xl font-medium tracking-tight text-text-primary md:w-2/3 md:text-6xl">
+      <h1 className="reveal reveal-delay-1 mb-8 w-full font-clash text-3xl font-medium tracking-tight text-text-primary md:w-2/3 md:text-6xl">
         Let&apos;s start a project together
       </h1>
 
       <div className="flex flex-col gap-10 lg:flex-row lg:gap-12">
         {/* Form Column */}
-        <div className="w-full lg:w-3/5">
+        <div className="reveal reveal-delay-2 w-full lg:w-3/5">
           <ContactForm />
         </div>
 
         {/* Profile Card Column */}
-        <div className="w-full lg:w-2/5">
+        <div className="reveal reveal-delay-3 w-full lg:w-2/5">
           <div className="h-full rounded-3xl border border-bg-700 bg-bg-800 p-8 shadow-sm flex flex-col justify-between">
             <div>
               {/* Availability Badge */}
@@ -40,10 +40,15 @@ export function ContactSection() {
                 </p>
               </div>
 
-              {/* Avatar Placeholder / Profile Visual */}
+              {/* Avatar Profile Photo */}
               <div className="mb-6 flex items-center gap-4">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full border border-bg-600 bg-bg-700 font-clash text-xl font-bold text-highlight">
-                  {profileData.initials}
+                <div className="relative h-16 w-16 overflow-hidden rounded-full border-2 border-bg-600 bg-bg-700 shadow-md shrink-0">
+                  <Image
+                    src={profileData.avatarUrl}
+                    alt={profileData.name}
+                    fill
+                    className="object-cover object-top"
+                  />
                 </div>
                 <div>
                   <h3 className="font-satoshi text-lg font-semibold text-text-primary">
@@ -85,7 +90,7 @@ export function ContactSection() {
             </div>
 
             {/* Social Icons */}
-            <div className="mt-8 flex items-center gap-4 border-t border-bg-700/80 pt-6">
+            <div className="mt-8 flex items-center gap-3.5 border-t border-bg-700/80 pt-6">
               <a
                 href={profileData.linkedInUrl}
                 target="_blank"
@@ -112,6 +117,15 @@ export function ContactSection() {
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-bg-700 bg-bg-900 text-text-secondary transition-colors hover:border-bg-600 hover:text-text-primary"
               >
                 <InstagramIcon className="h-4 w-4" />
+              </a>
+              <a
+                href={profileData.twitterUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X (Twitter)"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-bg-700 bg-bg-900 text-text-secondary transition-colors hover:border-bg-600 hover:text-text-primary"
+              >
+                <XIcon className="h-3.5 w-3.5" />
               </a>
               <a
                 href={`mailto:${profileData.email}`}

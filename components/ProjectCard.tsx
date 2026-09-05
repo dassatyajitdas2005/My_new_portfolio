@@ -15,7 +15,7 @@ export function ProjectCard({ project, onSelect, stagger = false }: ProjectCardP
   return (
     <div
       onClick={() => onSelect?.(project)}
-      className={`group h-fit w-full cursor-pointer transition-all duration-300 ${
+      className={`reveal group h-fit w-full cursor-pointer transition-all duration-300 ${
         stagger ? "sm:mt-14" : ""
       }`}
     >

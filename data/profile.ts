@@ -26,6 +26,7 @@ export interface ProfileData {
   linkedInUrl: string;
   githubUrl: string;
   instagramUrl: string;
+  twitterUrl: string;
   availableForWork: boolean;
   languages: { language: string; proficiency: string }[];
   socialLinks: SocialLink[];
@@ -53,6 +54,7 @@ export const profileData: ProfileData = {
   linkedInUrl: "https://www.linkedin.com/in/satyajit-das-7822ab300",
   githubUrl: "https://github.com/dassatyajitdas2005",
   instagramUrl: "https://www.instagram.com/satyajit_d_a_s_/",
+  twitterUrl: "https://x.com/Satyajit1873526",
   availableForWork: true,
   languages: [
     { language: "Bengali", proficiency: "Full Professional" },
@@ -76,14 +78,14 @@ export const profileData: ProfileData = {
       label: "Instagram",
     },
     {
+      name: "X (Twitter)",
+      url: "https://x.com/Satyajit1873526",
+      label: "X (Twitter)",
+    },
+    {
       name: "Gmail",
       url: "mailto:dassatyajitdas2005@gmail.com",
       label: "Gmail",
-    },
-    {
-      name: "Portfolio",
-      url: "https://dassatyajitdas2005.github.io/my_portfolio/",
-      label: "Live Site",
     },
   ],
 };

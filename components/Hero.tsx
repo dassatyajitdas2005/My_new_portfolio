@@ -9,7 +9,7 @@ export function Hero() {
   return (
     <section className="mx-auto my-8 max-w-screen-xl px-4 sm:px-6 lg:px-8 max-sm:my-4">
       {/* Greeting */}
-      <div className="mb-6 flex items-center gap-2 text-text-primary">
+      <div className="reveal mb-6 flex items-center gap-2 text-text-primary">
         <span className="wave text-highlight">
           <Hand className="h-6 w-6 text-highlight" />
         </span>
@@ -17,7 +17,7 @@ export function Hero() {
       </div>
 
       {/* Main Headline */}
-      <div>
+      <div className="reveal reveal-delay-1">
         <h1 className="text-pretty font-clash text-4xl font-medium leading-[1.1] tracking-tight sm:text-5xl md:text-6xl lg:w-4/5 lg:text-7xl">
           {profileData.heroHeadline1}{" "}
           <span className="text-highlight">{profileData.heroHeadlineAccent}</span>{" "}
@@ -26,7 +26,7 @@ export function Hero() {
       </div>
 
       {/* Separator + Description */}
-      <div className="mt-8 flex flex-col gap-6 md:flex-row md:items-center">
+      <div className="reveal reveal-delay-2 mt-8 flex flex-col gap-6 md:flex-row md:items-center">
         <div className="h-[1px] w-full bg-bg-700 md:w-1/3" />
         <p className="w-full text-pretty text-base text-text-secondary md:w-2/3 md:text-lg font-satoshi">
           {profileData.heroDescription}
@@ -34,7 +34,7 @@ export function Hero() {
       </div>
 
       {/* Social Links + CTA Button */}
-      <div className="mt-10 flex flex-col justify-between gap-6 sm:flex-row sm:items-center">
+      <div className="reveal reveal-delay-3 mt-10 flex flex-col justify-between gap-6 sm:flex-row sm:items-center">
         <ul className="flex flex-wrap items-center gap-6">
           {profileData.socialLinks.map((social) => (
             <li key={social.name}>

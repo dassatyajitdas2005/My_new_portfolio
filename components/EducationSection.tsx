@@ -22,7 +22,7 @@ export function EducationSection() {
   return (
     <section className="mx-auto my-24 max-w-screen-xl px-4 sm:px-6 lg:px-8">
       {/* Badge */}
-      <div className="mb-4 flex items-center gap-2">
+      <div className="reveal mb-4 flex items-center gap-2">
         <Sparkle className="h-4 w-4 text-highlight" />
         <span className="inline-block bg-gradient-to-r from-text-secondary via-text-primary to-text-secondary bg-[length:300%_200%] bg-clip-text text-xs font-semibold uppercase tracking-widest text-highlight animate-shine">
           My Education
@@ -30,19 +30,22 @@ export function EducationSection() {
       </div>
 
       {/* Headings */}
-      <h2 className="mb-4 text-3xl font-medium tracking-tight text-text-primary md:text-5xl font-clash">
-        Academic Journey
-      </h2>
-      <p className="mb-10 text-pretty text-base text-text-secondary font-satoshi">
-        My educational foundation combining pharmaceutical sciences, business administration, and quantitative sciences.
-      </p>
+      <div className="reveal reveal-delay-1">
+        <h2 className="mb-4 text-3xl font-medium tracking-tight text-text-primary md:text-5xl font-clash">
+          Academic Journey
+        </h2>
+        <p className="mb-10 text-pretty text-base text-text-secondary font-satoshi">
+          My educational foundation combining pharmaceutical sciences, business administration, and quantitative sciences.
+        </p>
+      </div>
 
       {/* Grid of Education Cards */}
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        {educationData.map((edu) => (
+        {educationData.map((edu, idx) => (
           <div
             key={edu.id}
-            className="flex flex-col justify-between rounded-3xl border border-bg-700 bg-bg-800/80 p-6 shadow-sm transition-all duration-300 hover:border-bg-600 hover:shadow-md"
+            className="reveal flex flex-col justify-between rounded-3xl border border-bg-700 bg-bg-800/80 p-6 shadow-sm transition-all duration-300 hover:border-bg-600 hover:shadow-md"
+            style={{ transitionDelay: `${0.1 * (idx + 1)}s` }}
           >
             <div>
               {/* Icon Badge */}

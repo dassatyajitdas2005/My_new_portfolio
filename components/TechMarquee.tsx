@@ -1,56 +1,44 @@
 "use client";
 
 import * as React from "react";
-import { skillsList } from "@/data/skills";
+import { SkillItem, skillsList } from "@/data/skills";
 import {
-  Code,
-  Layers,
-  Cpu,
-  Sparkles,
-  FileSpreadsheet,
-  Video,
-  Database,
-  Globe,
-  Layout,
-  Palette,
+  Activity,
   ShieldCheck,
-  Terminal,
+  TrendingUp,
+  Sparkles,
 } from "lucide-react";
-import {
-  JavaScriptIcon,
-  FirebaseIcon,
-  EmailJSIcon,
-} from "./Icons";
 
 interface TechMarqueeProps {
   duration?: number;
   className?: string;
 }
 
-const getIcon = (name: string) => {
-  if (name === "JavaScript" || name.includes("JavaScript"))
-    return <JavaScriptIcon className="h-4 w-4 text-highlight" />;
-  if (name === "Firebase" || name.includes("Firebase"))
-    return <FirebaseIcon className="h-4 w-4 text-highlight" />;
-  if (name === "EmailJS" || name.includes("EmailJS"))
-    return <EmailJSIcon className="h-4 w-4 text-highlight" />;
-  if (name.includes("Web") || name.includes("React") || name.includes("Next"))
-    return <Globe className="h-4 w-4 text-highlight" />;
-  if (name.includes("Health") || name.includes("Pharmacy"))
-    return <ShieldCheck className="h-4 w-4 text-highlight" />;
-  if (name.includes("CapCut") || name.includes("Video"))
-    return <Video className="h-4 w-4 text-highlight" />;
-  if (name.includes("Design") || name.includes("Poster"))
-    return <Palette className="h-4 w-4 text-highlight" />;
-  if (name.includes("Sheets") || name.includes("Data"))
-    return <FileSpreadsheet className="h-4 w-4 text-highlight" />;
-  if (name.includes("TypeScript"))
-    return <Code className="h-4 w-4 text-highlight" />;
-  if (name.includes("Tailwind") || name.includes("HTML"))
-    return <Layout className="h-4 w-4 text-highlight" />;
-  if (name.includes("Git"))
-    return <Terminal className="h-4 w-4 text-highlight" />;
-  return <Sparkles className="h-4 w-4 text-highlight" />;
+const renderSkillIcon = (skill: SkillItem) => {
+  if (skill.icon) {
+    return (
+      <img
+        src={skill.icon}
+        alt={skill.name}
+        width={18}
+        height={18}
+        loading="lazy"
+        decoding="async"
+        className="h-4 w-4 object-contain shrink-0"
+      />
+    );
+  }
+
+  if (skill.name.includes("Health")) {
+    return <Activity className="h-4 w-4 text-emerald-400 shrink-0" />;
+  }
+  if (skill.name.includes("Pharmacy")) {
+    return <ShieldCheck className="h-4 w-4 text-teal-400 shrink-0" />;
+  }
+  if (skill.name.includes("Business")) {
+    return <TrendingUp className="h-4 w-4 text-blue-400 shrink-0" />;
+  }
+  return <Sparkles className="h-4 w-4 text-amber-400 shrink-0" />;
 };
 
 export function TechMarquee({ duration = 40, className = "" }: TechMarqueeProps) {
@@ -68,9 +56,9 @@ export function TechMarquee({ duration = 40, className = "" }: TechMarqueeProps)
             {skillsList.map((skill, idx) => (
               <div
                 key={`t1-${idx}`}
-                className="mx-1.5 inline-flex items-center gap-2 rounded-full border border-bg-700 bg-bg-800 px-4 py-2 text-xs font-medium text-text-primary shadow-sm transition-colors hover:border-bg-600 dark:bg-bg-800"
+                className="mx-1.5 inline-flex items-center gap-2 rounded-full border border-bg-700 bg-bg-800 px-4 py-2 text-sm font-medium text-text-primary shadow-sm transition-colors hover:border-bg-600 hover:bg-bg-700/80 dark:bg-bg-800"
               >
-                {getIcon(skill.name)}
+                {renderSkillIcon(skill)}
                 <span>{skill.name}</span>
               </div>
             ))}
@@ -84,9 +72,9 @@ export function TechMarquee({ duration = 40, className = "" }: TechMarqueeProps)
             {skillsList.map((skill, idx) => (
               <div
                 key={`t2-${idx}`}
-                className="mx-1.5 inline-flex items-center gap-2 rounded-full border border-bg-700 bg-bg-800 px-4 py-2 text-xs font-medium text-text-primary shadow-sm transition-colors hover:border-bg-600 dark:bg-bg-800"
+                className="mx-1.5 inline-flex items-center gap-2 rounded-full border border-bg-700 bg-bg-800 px-4 py-2 text-sm font-medium text-text-primary shadow-sm transition-colors hover:border-bg-600 hover:bg-bg-700/80 dark:bg-bg-800"
               >
-                {getIcon(skill.name)}
+                {renderSkillIcon(skill)}
                 <span>{skill.name}</span>
               </div>
             ))}
