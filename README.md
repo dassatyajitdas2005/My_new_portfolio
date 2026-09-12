@@ -9,7 +9,7 @@ A modern, high-performance developer portfolio and project showcase platform des
 ## 🌐 Live Portfolio
 
 **Experience the live website:**  
-👉 **[https://s4satyajit.vercel.app](https://s4satyajit.vercel.app)**
+👉 **[https://satyajitdas.in](https://satyajitdas.in)**
 
 **GitHub Repository:**  
 📁 **[https://github.com/dassatyajitdas2005/My_new_portfolio](https://github.com/dassatyajitdas2005/My_new_portfolio)**
