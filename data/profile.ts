@@ -51,7 +51,7 @@ export const profileData: ProfileData = {
   address: "Belar, Dhalbelun, Paschim Medinipur, 721424",
   email: "dassatyajitdas2005@gmail.com",
   phone: "+91 7872624993",
-  portfolioUrl: "https://dassatyajitdas2005.github.io/my_portfolio/",
+  portfolioUrl: "https://satyajitdas.in",
   linkedInUrl: "https://www.linkedin.com/in/satyajit-das-7822ab300",
   githubUrl: "https://github.com/dassatyajitdas2005",
   instagramUrl: "https://www.instagram.com/satyajit_d_a_s_/",
