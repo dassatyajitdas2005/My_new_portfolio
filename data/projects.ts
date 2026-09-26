@@ -55,7 +55,7 @@ export const projectsData: Project[] = [
       "EmailJS",
     ],
     githubUrl: "https://github.com/dassatyajitdas2005",
-    liveUrl: "https://dassatyajitdas2005.github.io/my_portfolio/",
+    liveUrl: "https://meditrack-bssh.vercel.app/",
   },
   {
     id: "developer-portfolio",
@@ -127,6 +127,7 @@ export const projectsData: Project[] = [
       "SEO Copywriting",
       "Digital Marketing",
     ],
+    liveUrl: "https://needmet.in",
   },
   {
     id: "rental-bookmipg",
@@ -160,6 +161,7 @@ export const projectsData: Project[] = [
       "Video Editing",
       "Brand Strategy",
     ],
+    liveUrl: "https://bookmipg.com",
   },
   {
     id: "tech-it-youtube",
