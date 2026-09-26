@@ -1,0 +1,71 @@
+# Satyajit Das — Personal Portfolio & Knowledge Base
+
+> Health-Tech Innovator, Pharmacy Practitioner, and Web Developer combining pharmaceutical science with modern software engineering.
+
+## Quick Facts
+- **Full Name**: Satyajit Das
+- **Location**: Kharagpur / Paschim Medinipur, West Bengal, India
+- **Website**: https://satyajitdas.in
+- **Email**: dassatyajitdas2005@gmail.com
+- **Phone**: +91-7872624993
+- **LinkedIn**: https://www.linkedin.com/in/satyajit-das-7822ab300
+- **GitHub**: https://github.com/dassatyajitdas2005
+- **Twitter / X**: https://x.com/Satyajit1873526
+- **Instagram**: https://www.instagram.com/satyajit_d_a_s_/
+
+## Professional Summary
+Satyajit Das is a Pharmacy student at Haldia Institute of Pharmacy and BBA scholar at Manipal Academy of Higher Education (MAHE). He specializes in healthcare technology, hospital pharmacy workflows, pharmacovigilance, and modern web application development. He is the founder and lead developer of MediTrack, an intelligent healthcare management and hospital internship tracking platform.
+
+## Education
+- **Manipal Academy of Higher Education (MAHE)** (2026 – Present)
+  - Degree: Bachelor of Business Administration (BBA) – Currently Pursuing
+  - Location: Udupi, Karnataka
+- **Haldia Institute of Pharmacy (HIP)** (2024 – 2026)
+  - Degree: Diploma in Pharmacy (D.Pharm)
+  - Score: 79.72%
+  - Location: Haldia, West Bengal
+- **Sundarar High School** (2023)
+  - Qualification: Higher Secondary (Class XII) – WBCHSE
+  - Score: 67%
+  - Location: West Bengal
+- **Sundarar High School** (2021)
+  - Qualification: Secondary (Class X) – WBBSE
+  - Score: 72.14%
+  - Location: West Bengal
+
+## Experience & Clinical Training
+- **Belda Super Speciality Hospital** (2026)
+  - Role: Hospital Pharmacy Trainee (90-Day Training)
+  - Responsibilities: Practical hospital pharmacy workflow, prescription handling, medicine dispensing, inventory management, FIFO practices, drug safety procedures, and pharmaceutical documentation.
+- **NeedMet** (2026 – Present)
+  - Role: Listing Executive
+  - Responsibilities: Business data listing, verification, merchant catalog management, local business research, and SEO-oriented copywriting. Website: https://needmet.in
+- **Rental | Bookmipg** (2025)
+  - Role: Video Editor & Graphic Designer
+  - Responsibilities: Property rental marketing video editing, brand creative direction, social media creatives, and campaign assets. Website: https://bookmipg.com
+- **Catalyst Club – Haldia Institute of Pharmacy** (2025 – Present)
+  - Role: Student Member / Digital Activities
+  - Responsibilities: Digital activities, educational content, quizzes, and online student communication.
+
+## Core Projects
+- **MediTrack — Hospital Internship & Training Management System**
+  - Live Demo: https://meditrack-bssh.vercel.app/
+  - Technologies: HTML, CSS, JavaScript, Firebase
+  - Features: Hospital intern management, training schedules, attendance records, doctor schedules, role-based workflows (Admin, Student/Intern, Supervisor), certificate generation, and medicine stock concepts.
+- **Personal Portfolio Website**
+  - Live Demo: https://satyajitdas.in
+  - Technologies: Next.js 15, React, TypeScript, Tailwind CSS, Framer Motion
+- **NeedMet Business Directory & Operations**
+  - Live Demo: https://needmet.in
+  - Technologies: Google Sheets, Data Systems, SEO Copywriting, CapCut
+- **Rental | Bookmipg Media & Branding**
+  - Live Demo: https://bookmipg.com
+  - Technologies: Video Editing, Graphic Design, Brand Strategy
+
+## Technical & Pharmaceutical Skills
+- **Pharmaceutical**: Pharmacovigilance, MedDRA, Patient Counselling, Prescription Handling, Drug Classification, OTC/Rx Awareness, GMP, FIFO, Pharmaceutical Documentation, Drug Safety, ADR Reporting, Dispensing, Dosage Forms, Hospital Pharmacy.
+- **Technical & Software**: Next.js, React, TypeScript, JavaScript, HTML5, CSS3, Firebase, Python, SQL, MS Excel, Power BI, Tailwind CSS, Git, GitHub.
+- **Creative & Operations**: CapCut, Video Editing, Canva, Graphic Design, SEO Copywriting, Digital Marketing, Google Sheets.
+
+## Resume & Downloads
+- Official Resume: https://satyajitdas.in/resume.pdf

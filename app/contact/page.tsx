@@ -8,12 +8,27 @@ export const metadata: Metadata = {
   title: "Contact & Collaboration",
   description: `Get in touch with ${profileData.name} for health-tech projects, web development, collaborations, or general inquiries.`,
   alternates: {
-    canonical: "/contact",
+    canonical: "https://satyajitdas.in/contact",
   },
   openGraph: {
     title: `Contact ${profileData.name} | Connect & Collaborate`,
-    description: `Let's connect for healthcare technology innovations, web development projects, or speaking opportunities.`,
+    description: `Let's connect for healthcare technology innovations, web development projects, or collaborations.`,
     url: "https://satyajitdas.in/contact",
+    siteName: `${profileData.name} Portfolio`,
+    images: [
+      {
+        url: "/images/satyajit.jpg",
+        width: 800,
+        height: 800,
+        alt: `Contact ${profileData.name}`,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Contact ${profileData.name} | Connect & Collaborate`,
+    description: `Let's connect for healthcare technology innovations, web development projects, or collaborations.`,
+    images: ["/images/satyajit.jpg"],
   },
 };
 
