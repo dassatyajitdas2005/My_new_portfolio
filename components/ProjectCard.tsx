@@ -12,10 +12,21 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ project, onSelect, stagger = false }: ProjectCardProps) {
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      onSelect?.(project);
+    }
+  };
+
   return (
     <div
+      role="button"
+      tabIndex={0}
+      aria-label={`View details for ${project.title}`}
       onClick={() => onSelect?.(project)}
-      className={`reveal group h-fit w-full cursor-pointer transition-all duration-300 ${
+      onKeyDown={handleKeyDown}
+      className={`reveal group h-fit w-full cursor-pointer rounded-3xl transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-highlight ${
         stagger ? "sm:mt-14" : ""
       }`}
     >

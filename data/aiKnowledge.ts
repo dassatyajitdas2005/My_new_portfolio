@@ -63,6 +63,27 @@ I can tell you all about Satyajit's:
 What would you like to explore?`;
   }
 
+  // MERO / Startup
+  if (q.includes("mero") || q.includes("startup")) {
+    const mero = projectsData.find((p) => p.id === "mero") || projectsData[0];
+    return `### 🚀 Featured Startup: **${mero.title} — ${mero.subtitle}**
+${mero.description}
+
+**Core Highlights:**
+- **Overview**: ${mero.fullOverview}
+- **Role**: ${mero.role}
+- **What MERO Builds**:
+  - Modern websites and landing pages
+  - Inventory management systems
+  - CRM and customer management solutions
+  - Custom dashboards and business software
+  - Professional portfolios and personal branding solutions
+- **Project Focus**: ${mero.projectFocus || mero.solutionStatement}
+- **Live Platform**: [${mero.liveUrl}](${mero.liveUrl})
+
+MERO showcases Satyajit's leadership in startup building, product strategy, UI/UX design, and business software development!`;
+  }
+
   // MediTrack / Projects
   if (q.includes("meditrack") || q.includes("project") || q.includes("work") || q.includes("build") || q.includes("app")) {
     const meditrack = projectsData.find((p) => p.id === "meditrack") || projectsData[0];
@@ -74,12 +95,13 @@ ${meditrack.description}
 - **Core Features**: Medication expiry tracking, dosage alerts, patient record management, prescription handling.
 - **Tech Stack**: Next.js, React, TypeScript, Tailwind CSS, Firebase.
 
-Satyajit has also worked on:
-- **PharmaCare Hub**: Clinical Drug Information Portal
-- **Business Data Engine**: Quantitative analytics & marketing operations
-- **BrandPulse Media**: High-retention promotional digital campaigns
+Satyajit has also founded and built:
+- **MERO**: Startup for digital solutions, custom software, inventory & CRM ([Live Project](https://m4mero.vercel.app))
+- **Personal Portfolio**: High-performance editorial developer portfolio
+- **NeedMet Business Operations**: Enterprise business data & verification
+- **Rental | Bookmipg**: Rental property digital media & branding
 
-Would you like to know how to view the live demo or code repository?`;
+Would you like to know how to view the live demos or details?`;
   }
 
   // Skills / Tech Stack

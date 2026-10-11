@@ -17,9 +17,59 @@ export interface Project {
   technologies: string[];
   githubUrl?: string;
   liveUrl?: string;
+  badge?: string;
+  projectFocus?: string;
+  featuresTitle?: string;
 }
 
 export const projectsData: Project[] = [
+  {
+    id: "mero",
+    slug: "mero",
+    title: "MERO",
+    subtitle: "Digital Solutions & Technology",
+    description:
+      "MERO is a startup focused on building modern websites, custom software, inventory management systems, CRM solutions, and professional digital experiences for individuals and businesses.",
+    fullOverview:
+      "MERO is being developed to help individuals and businesses turn ideas into practical digital solutions.",
+    problemStatement:
+      "Individuals and growing businesses often struggle with fragmented digital tools, disconnected workflows, and a lack of unified digital presence across web and operational systems.",
+    solutionStatement:
+      "Building a versatile digital solutions brand with a consistent identity, practical services, and a professional online presence.",
+    projectFocus:
+      "Building a versatile digital solutions brand with a consistent identity, practical services, and a professional online presence.",
+    featuresTitle: "What MERO Builds",
+    category: "Development",
+    badge: "Startup · Digital Solutions",
+    tags: [
+      "Startup",
+      "Web Development",
+      "Custom Software",
+      "CRM & Inventory Systems",
+      "Product Building",
+    ],
+    year: "2026",
+    featured: true,
+    image: "/images/projects/mero-banner.svg",
+    role: "Founder · Product Development · UI/UX Design · Web Development · Brand Building",
+    features: [
+      "Modern websites and landing pages",
+      "Inventory management systems",
+      "CRM and customer management solutions",
+      "Custom dashboards and business software",
+      "Professional portfolios and personal branding solutions",
+    ],
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "UI/UX Design",
+      "CRM Systems",
+      "Inventory Management",
+    ],
+    liveUrl: "https://m4mero.vercel.app",
+  },
   {
     id: "meditrack",
     slug: "meditrack",

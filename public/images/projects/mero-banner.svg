@@ -1,0 +1,317 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="meroBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c0d10" />
+      <stop offset="45%" stop-color="#121318" />
+      <stop offset="100%" stop-color="#090a0d" />
+    </linearGradient>
+
+    <!-- Warm Brand Gradients: Charcoal, Orange & Golden Yellow -->
+    <linearGradient id="meroBrandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="50%" stop-color="#fb923c" />
+      <stop offset="100%" stop-color="#facc15" />
+    </linearGradient>
+
+    <linearGradient id="goldAccentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#facc15" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+
+    <linearGradient id="orangeAccentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+
+    <linearGradient id="cardGradDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#18191f" />
+      <stop offset="100%" stop-color="#111216" />
+    </linearGradient>
+
+    <linearGradient id="cardGradElevated" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#21232b" />
+      <stop offset="100%" stop-color="#15161c" />
+    </linearGradient>
+
+    <!-- Subtle Tech Grid Pattern -->
+    <pattern id="meroGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#222530" stroke-width="0.75" />
+    </pattern>
+
+    <!-- Glass Glow Filter -->
+    <filter id="glowOrange" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="60" result="blur" />
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="800" fill="url(#meroBgGrad)" />
+  <rect width="1200" height="800" fill="url(#meroGrid)" opacity="0.45" />
+
+  <!-- Ambient Brand Glows -->
+  <circle cx="1020" cy="180" r="320" fill="#f97316" opacity="0.14" filter="url(#glowOrange)" />
+  <circle cx="180" cy="660" r="280" fill="#facc15" opacity="0.10" filter="url(#glowOrange)" />
+  <circle cx="600" cy="400" r="220" fill="#ea580c" opacity="0.06" filter="url(#glowOrange)" />
+
+  <!-- Main Application & Dashboard Shell -->
+  <g transform="translate(80, 75)">
+    <!-- Browser Window Shadow / Outer Border -->
+    <rect width="1040" height="650" rx="26" fill="#13141a" stroke="#262936" stroke-width="2" />
+
+    <!-- Browser Window Chrome Bar -->
+    <rect width="1040" height="58" rx="26" fill="#171821" />
+    <!-- Fix border radius at bottom corners of bar -->
+    <rect y="40" width="1040" height="18" fill="#171821" />
+    <line x1="0" y1="58" x2="1040" y2="58" stroke="#262936" stroke-width="1" />
+
+    <!-- Window Dots -->
+    <circle cx="36" cy="29" r="6.5" fill="#ef4444" opacity="0.85" />
+    <circle cx="58" cy="29" r="6.5" fill="#f59e0b" opacity="0.85" />
+    <circle cx="80" cy="29" r="6.5" fill="#10b981" opacity="0.85" />
+
+    <!-- URL Bar -->
+    <g transform="translate(300, 13)">
+      <rect width="440" height="32" rx="16" fill="#0f1015" stroke="#242735" stroke-width="1" />
+      <!-- Lock Icon -->
+      <path d="M 18 17 V 14 A 4 4 0 0 1 26 14 V 17 M 15 17 H 29 A 2 2 0 0 1 31 19 V 24 A 2 2 0 0 1 29 26 H 15 A 2 2 0 0 1 13 24 V 19 A 2 2 0 0 1 15 17 Z" fill="none" stroke="#facc15" stroke-width="1.5" />
+      <text x="40" y="21" fill="#9ca3af" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500">
+        https://m4mero.vercel.app
+      </text>
+      <circle cx="418" cy="16" r="3.5" fill="#10b981" />
+    </g>
+
+    <!-- Top In-App Brand Nav -->
+    <g transform="translate(32, 76)">
+      <!-- MERO Brand Emblem -->
+      <rect width="36" height="36" rx="10" fill="url(#orangeAccentGrad)" />
+      <!-- Stylized M Glyph -->
+      <path d="M 10 27 V 11 L 18 20 L 26 11 V 27" fill="none" stroke="#ffffff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
+
+      <text x="46" y="24" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" letter-spacing="0.5">
+        MERO
+      </text>
+
+      <rect x="116" y="7" width="138" height="22" rx="11" fill="#f97316" fill-opacity="0.15" stroke="#f97316" stroke-opacity="0.4" stroke-width="1" />
+      <text x="185" y="22" fill="#fb923c" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" text-anchor="middle" letter-spacing="0.5">
+        DIGITAL SOLUTIONS
+      </text>
+
+      <!-- Nav Links -->
+      <g transform="translate(620, 8)">
+        <text x="0" y="15" fill="#facc15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">Home</text>
+        <text x="65" y="15" fill="#9ca3af" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500">Services</text>
+        <text x="145" y="15" fill="#9ca3af" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500">Solutions</text>
+        <text x="235" y="15" fill="#9ca3af" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500">Contact</text>
+      </g>
+    </g>
+
+    <!-- Main Content Area: Left Showcase + Right Dashboard Composition -->
+    
+    <!-- LEFT COLUMN: Hero Presentation -->
+    <g transform="translate(32, 136)">
+      <!-- Badge Pill -->
+      <rect width="180" height="26" rx="13" fill="#facc15" fill-opacity="0.12" stroke="#facc15" stroke-opacity="0.35" stroke-width="1" />
+      <circle cx="14" cy="13" r="3.5" fill="#facc15" />
+      <text x="24" y="17" fill="#facc15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="0.5">
+        STARTUP ECOSYSTEM
+      </text>
+
+      <!-- Hero Headline -->
+      <text x="0" y="66" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="800" letter-spacing="-0.5">
+        Turning Ideas into
+      </text>
+      <text x="0" y="108" fill="url(#meroBrandGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="800" letter-spacing="-0.5">
+        Practical Digital Systems.
+      </text>
+
+      <!-- Subtext -->
+      <text x="0" y="146" fill="#9ca3af" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="400">
+        Bespoke web platforms, custom inventory trackers,
+      </text>
+      <text x="0" y="168" fill="#9ca3af" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="400">
+        CRM architectures, and professional digital identity.
+      </text>
+
+      <!-- CTA Buttons -->
+      <g transform="translate(0, 196)">
+        <!-- Primary Action Button -->
+        <rect width="156" height="42" rx="12" fill="url(#orangeAccentGrad)" />
+        <text x="78" y="26" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" text-anchor="middle">
+          Live Platform ↗
+        </text>
+
+        <!-- Secondary Outline Button -->
+        <rect x="168" width="138" height="42" rx="12" fill="#1b1c24" stroke="#2e3242" stroke-width="1" />
+        <text x="237" y="26" fill="#d1d5db" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" text-anchor="middle">
+          Explore Builds
+        </text>
+      </g>
+
+      <!-- Capability Feature Pills -->
+      <g transform="translate(0, 268)">
+        <rect width="320" height="196" rx="18" fill="url(#cardGradDark)" stroke="#262936" stroke-width="1" />
+
+        <text x="20" y="30" fill="#facc15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="0.5">
+          WHAT MERO DELIVERS
+        </text>
+
+        <!-- Item 1 -->
+        <g transform="translate(20, 48)">
+          <circle cx="6" cy="8" r="4" fill="#f97316" />
+          <text x="18" y="12" fill="#e5e7eb" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500">
+            Modern Websites &amp; Landing Pages
+          </text>
+        </g>
+
+        <!-- Item 2 -->
+        <g transform="translate(20, 82)">
+          <circle cx="6" cy="8" r="4" fill="#facc15" />
+          <text x="18" y="12" fill="#e5e7eb" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500">
+            Inventory Management Systems
+          </text>
+        </g>
+
+        <!-- Item 3 -->
+        <g transform="translate(20, 116)">
+          <circle cx="6" cy="8" r="4" fill="#f97316" />
+          <text x="18" y="12" fill="#e5e7eb" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500">
+            CRM &amp; Customer Management
+          </text>
+        </g>
+
+        <!-- Item 4 -->
+        <g transform="translate(20, 150)">
+          <circle cx="6" cy="8" r="4" fill="#facc15" />
+          <text x="18" y="12" fill="#e5e7eb" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500">
+            Custom Software &amp; Portfolios
+          </text>
+        </g>
+      </g>
+    </g>
+
+    <!-- RIGHT COLUMN: Dashboard & Product Mockup Composition -->
+    <g transform="translate(500, 136)">
+      <!-- Main Dashboard Card -->
+      <rect width="476" height="468" rx="20" fill="url(#cardGradElevated)" stroke="#2b2f3e" stroke-width="1.5" />
+
+      <!-- Dashboard Header -->
+      <g transform="translate(22, 22)">
+        <text x="0" y="16" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700">
+          MERO Operations &amp; Solutions Hub
+        </text>
+        <text x="0" y="32" fill="#9ca3af" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">
+          Real-time CRM, Inventory &amp; Web Engine
+        </text>
+
+        <!-- Live Status Pill -->
+        <g transform="translate(330, 2)">
+          <rect width="102" height="24" rx="12" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-opacity="0.4" stroke-width="1" />
+          <circle cx="12" cy="12" r="3.5" fill="#10b981" />
+          <text x="22" y="16" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700">
+            LIVE SYSTEM
+          </text>
+        </g>
+      </g>
+
+      <!-- Mini KPI Metrics Row -->
+      <g transform="translate(22, 70)">
+        <!-- Metric 1: Custom Software -->
+        <g>
+          <rect width="136" height="74" rx="12" fill="#181a22" stroke="#252835" stroke-width="1" />
+          <text x="12" y="22" fill="#9ca3af" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600">INVENTORY TRACK</text>
+          <text x="12" y="48" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800">100%</text>
+          <text x="12" y="64" fill="#facc15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="600">Sync Precision</text>
+        </g>
+
+        <!-- Metric 2: CRM & Leads -->
+        <g transform="translate(148, 0)">
+          <rect width="136" height="74" rx="12" fill="#181a22" stroke="#252835" stroke-width="1" />
+          <text x="12" y="22" fill="#9ca3af" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600">CRM WORKFLOWS</text>
+          <text x="12" y="48" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800">Automated</text>
+          <text x="12" y="64" fill="#f97316" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="600">Zero Latency</text>
+        </g>
+
+        <!-- Metric 3: Digital Growth -->
+        <g transform="translate(296, 0)">
+          <rect width="136" height="74" rx="12" fill="#181a22" stroke="#252835" stroke-width="1" />
+          <text x="12" y="22" fill="#9ca3af" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600">WEB EXPERIENCES</text>
+          <text x="12" y="48" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800">Bespoke</text>
+          <text x="12" y="64" fill="#facc15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="600">Modern UX</text>
+        </g>
+      </g>
+
+      <!-- Interactive Data / Solutions Table View -->
+      <g transform="translate(22, 160)">
+        <rect width="432" height="186" rx="14" fill="#161820" stroke="#232633" stroke-width="1" />
+
+        <!-- Table Header -->
+        <g transform="translate(16, 18)">
+          <text x="0" y="0" fill="#9ca3af" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700">SERVICE MODULE</text>
+          <text x="180" y="0" fill="#9ca3af" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700">TECH STACK</text>
+          <text x="320" y="0" fill="#9ca3af" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700">DELIVERY</text>
+        </g>
+        <line x1="16" y1="28" x2="416" y2="28" stroke="#242735" stroke-width="1" />
+
+        <!-- Row 1 -->
+        <g transform="translate(16, 48)">
+          <text x="0" y="10" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="600">Modern Web &amp; Apps</text>
+          <text x="180" y="10" fill="#facc15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">Next.js · Tailwind</text>
+          <rect x="320" y="-3" width="76" height="18" rx="9" fill="#f97316" fill-opacity="0.18" />
+          <text x="358" y="10" fill="#fb923c" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">Production</text>
+        </g>
+
+        <!-- Row 2 -->
+        <g transform="translate(16, 82)">
+          <text x="0" y="10" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="600">Inventory Solutions</text>
+          <text x="180" y="10" fill="#facc15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">Custom Schemas</text>
+          <rect x="320" y="-3" width="76" height="18" rx="9" fill="#10b981" fill-opacity="0.18" />
+          <text x="358" y="10" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">Automated</text>
+        </g>
+
+        <!-- Row 3 -->
+        <g transform="translate(16, 116)">
+          <text x="0" y="10" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="600">CRM &amp; Dashboards</text>
+          <text x="180" y="10" fill="#facc15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">Full-Stack Tools</text>
+          <rect x="320" y="-3" width="76" height="18" rx="9" fill="#facc15" fill-opacity="0.18" />
+          <text x="358" y="10" fill="#facc15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">Active</text>
+        </g>
+
+        <!-- Row 4 -->
+        <g transform="translate(16, 150)">
+          <text x="0" y="10" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="600">Personal Brand Sites</text>
+          <text x="180" y="10" fill="#facc15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500">Bespoke Design</text>
+          <rect x="320" y="-3" width="76" height="18" rx="9" fill="#f97316" fill-opacity="0.18" />
+          <text x="358" y="10" fill="#fb923c" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">Polished</text>
+        </g>
+      </g>
+
+      <!-- Bottom Card: Founder & Product Building Banner -->
+      <g transform="translate(22, 362)">
+        <rect width="432" height="88" rx="14" fill="#191b24" stroke="#282c3c" stroke-width="1" />
+        
+        <!-- Founder Badge -->
+        <g transform="translate(16, 16)">
+          <rect width="36" height="36" rx="10" fill="url(#goldAccentGrad)" />
+          <text x="18" y="24" fill="#13141a" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" text-anchor="middle">SD</text>
+          
+          <g transform="translate(48, 6)">
+            <text x="0" y="12" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700">
+              Founder &amp; Product Developer
+            </text>
+            <text x="0" y="28" fill="#9ca3af" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">
+              UI/UX Design · Web Development · Brand Strategy
+            </text>
+          </g>
+        </g>
+
+        <!-- Verified Startup Badge -->
+        <g transform="translate(16, 62)">
+          <text x="0" y="12" fill="#fb923c" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600">
+            ✦ Building scalable digital solutions with practical business impact
+          </text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

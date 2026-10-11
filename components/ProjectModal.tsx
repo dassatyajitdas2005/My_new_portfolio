@@ -49,7 +49,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
         {/* Header Tag */}
         <div className="mb-3 flex items-center gap-2">
           <span className="rounded-full bg-[#B5FF6D]/15 px-3 py-1 text-xs font-semibold text-highlight">
-            {project.category}
+            {project.badge || project.category}
           </span>
           <span className="text-xs font-medium text-text-secondary">
             {project.year}
@@ -81,10 +81,10 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
             </div>
             <div>
               <h4 className="text-xs font-bold uppercase tracking-wider text-text-primary">
-                The Solution
+                {project.projectFocus ? "Project Focus" : "The Solution"}
               </h4>
               <p className="mt-1 text-xs text-text-secondary sm:text-sm">
-                {project.solutionStatement}
+                {project.projectFocus || project.solutionStatement}
               </p>
             </div>
           </div>
@@ -92,7 +92,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
           {/* Key Features */}
           <div>
             <h4 className="mb-3 text-sm font-bold uppercase tracking-wider text-text-primary">
-              Key Features & Capabilities
+              {project.featuresTitle || "Key Features & Capabilities"}
             </h4>
             <ul className="space-y-2">
               {project.features.map((feat, idx) => (
@@ -150,8 +150,8 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-xs font-semibold text-primary-foreground transition-all hover:bg-primary/90"
               >
-                <ExternalLink className="h-3.5 w-3.5" />
-                Live Demo
+                <span>View Live Project</span>
+                <span aria-hidden="true">↗</span>
               </a>
             )}
           </div>
