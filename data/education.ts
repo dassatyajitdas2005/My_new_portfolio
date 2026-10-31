@@ -15,8 +15,8 @@ export const educationData: Education[] = [
     institution: "Manipal Academy of Higher Education",
     degree: "Bachelor of Business Administration (BBA)",
     field: "Business Administration & Management, General",
-    period: "Graduating July 2026",
-    location: "India",
+    period: "Present",
+    location: "Udupi, Karnataka",
     highlights: [
       "Core focus on Business Strategy, Operations Management & Entrepreneurship",
       "Digital transformation and market disruption methodologies",
